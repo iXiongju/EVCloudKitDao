@@ -113,7 +113,7 @@ open class Descending: OrderBy {
 
 // Just here so that we can use a nice name while ordering.
 open class Distance: OrderBy {
-    public convenience required init(field: String, relativeLocation: CLLocation) {
+    public convenience required init(field: String, relativeLocation: CLLocation) { 
         self.init(sortDescriptor: CKLocationSortDescriptor(key: field, relativeLocation: relativeLocation), parent: nil)
     }
 }
